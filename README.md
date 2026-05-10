@@ -31,30 +31,6 @@
 - **Контекст** для управления состоянием аутентификации
 - **Кастомные стили** (минимализм, адаптив)
 
----
-
-## Структура проекта
-student-course-registration/
-├── backend/
-│ ├── src/
-│ │ ├── config/db.js # Подключение SQLite
-│ │ ├── controllers/ # Логика обработки запросов
-│ │ ├── middleware/ # auth.js, roles.js
-│ │ ├── routes/ # auth, courses, enrollments, users, teachers
-│ │ └── server.js
-│ ├── .env # PORT, JWT_SECRET
-│ └── database.sqlite # файл БД
-├── frontend/
-│ ├── src/
-│ │ ├── components/Layout/ # Header, Layout
-│ │ ├── pages/ # Homepage, Login, Register, CoursesList, CourseDetail, Profile, MyEnrollments, ManagerDashboard, AdminCourses, AdminUsers
-│ │ ├── context/AuthContext.jsx # JWT токен, логин, логаут
-│ │ └── utils/api.js # Axios инстанс с перехватчиками
-│ └── package.json
-└── README.md
-
-
-
 
 ---
 
@@ -127,6 +103,26 @@ cd student-course-registration
 
 [`node seed-teachers.js`](javascript:void(0))  
 [`node seed-course-teachers.js`](javascript:void(0))
+
+## Структура проекта
+student-course-registration/
+├── backend/
+│ ├── src/
+│ │ ├── config/db.js # Подключение SQLite
+│ │ ├── controllers/ # Логика обработки запросов
+│ │ ├── middleware/ # auth.js, roles.js
+│ │ ├── routes/ # auth, courses, enrollments, users, teachers
+│ │ └── server.js
+│ ├── .env # PORT, JWT_SECRET
+│ └── database.sqlite # файл БД
+├── frontend/
+│ ├── src/
+│ │ ├── components/Layout/ # Header, Layout
+│ │ ├── pages/ # Homepage, Login, Register, CoursesList, CourseDetail, Profile, MyEnrollments, ManagerDashboard, AdminCourses, AdminUsers
+│ │ ├── context/AuthContext.jsx # JWT токен, логин, логаут
+│ │ └── utils/api.js # Axios инстанс с перехватчиками
+│ └── package.json
+└── README.md
 
 ### Учётные записи по умолчанию:
 
