@@ -75,7 +75,7 @@
 
 ### 1. Клонировать репозиторий
 ```bash
-git clone <repo-url>
+git clone https://github.com/sseirl/student-course-registration.git
 cd student-course-registration
 
 ## 2. Настройка бэкенда
